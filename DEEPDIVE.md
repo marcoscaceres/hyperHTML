@@ -61,7 +61,7 @@ function update(statics, ...values) {
 
 ## How are attributes updated
 
-Quite often developers thinks about DOM attributes as something you can get or set via `node.setAttribute(name, value)`.
+Quite often, developers think about DOM attributes as something you can get or set via `node.setAttribute(name, value)`.
 Well, that's half of the story, 'cause [attributes are just nodes](https://dom.spec.whatwg.org/#interface-attr) like anything else on the DOM.
 
 This means that a generic attribute can be updated simply setting its `.value` property, like an `input` element would update its view when we set its value. It'd be silly to `input.setAttribute('value', content)` when we can just `input.value = content`, right?
